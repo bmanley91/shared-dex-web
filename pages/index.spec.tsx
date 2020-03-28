@@ -1,4 +1,4 @@
-import Home from './index';
+import Home from './index.page';
 
 describe('Home Page', () => {
     it('should render without error', () => {
