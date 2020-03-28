@@ -1,16 +1,17 @@
-import { ReactNode } from 'react';
+import React from 'react';
 import styled from '@emotion/styled';
 import { Global } from '@emotion/core';
 import Head from 'next/head';
 
 import { Header } from './header';
 
+
 const AppDiv = styled('div')`
     color: white;
     background: #282828;
     position: relative;
     min-height: 100vh;
-`
+`;
 
 const Footer = styled('div')`
     background: red;
@@ -19,11 +20,11 @@ const Footer = styled('div')`
     left: 0;
     bottom: 0;
     width: 100%;
-`
+`;
 
 export interface LayoutProps {
     title?: string,
-    children?: ReactNode
+    children?: React.ReactNode
 }
 
 export const Layout = (props: LayoutProps) => {
@@ -37,7 +38,7 @@ export const Layout = (props: LayoutProps) => {
             <Global styles={{
                 body: {
                     margin: 0,
-                    fontFamily: "'Poppins', sans-serif"
+                    fontFamily: '\'Poppins\', sans-serif'
                 }
             }}/>
             <AppDiv>

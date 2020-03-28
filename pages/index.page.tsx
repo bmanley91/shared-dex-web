@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 const BodyDiv = styled('div')`
     margin-top: 15px;
     text-align: center;
-`
+`;
 
 const Home = () => (
     <Layout>
