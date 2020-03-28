@@ -12,6 +12,15 @@ const AppDiv = styled('div')`
     min-height: 100vh;
 `
 
+const Footer = styled('div')`
+    background: red;
+    min-height: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+`
+
 export interface LayoutProps {
     title?: string,
     children?: ReactNode
@@ -34,6 +43,7 @@ export const Layout = (props: LayoutProps) => {
             <AppDiv>
                 <Header />
                 { props.children }
+                <Footer />
             </AppDiv>
         </div>
     );
