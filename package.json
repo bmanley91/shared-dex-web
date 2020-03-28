@@ -11,7 +11,12 @@
     "start": "serve ./out",
     "test": "jest"
   },
+  "pre-commit": [
+    "predeploy"
+  ],
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "next": "9.3.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
@@ -25,6 +30,7 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
     "jest": "^25.2.3",
+    "pre-commit": "^1.2.2",
     "react-test-renderer": "^16.13.1",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
