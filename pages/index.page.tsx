@@ -1,16 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
+import { Header } from '../components/header'
+import { Layout } from '../components/layout';
 
 const Home = () => (
-    <div className="container">
-        <Head>
-            <title>Shared Dex</title>
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <div>
-      Hello!
-        </div>
-    </div>
+    <Layout>
+        <p>Hello!</p>
+    </Layout>
 );
 
 export default Home;
