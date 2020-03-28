@@ -6,6 +6,9 @@ const Home = () => (
       <title>Shared Dex</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    <div>
+      Hello!
+    </div>
   </div>
 )
 
