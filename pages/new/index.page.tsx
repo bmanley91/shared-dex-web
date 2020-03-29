@@ -19,7 +19,7 @@ const NewDexPage: NextPage = () => {
         const createdDex = await createDex({
             userId:'1234'
         });
-        return router.push(`/dex/${createdDex.dexId}`);
+        return router.push('/post/dexId', `/dex/${createdDex.dexId}`);
     };
 
     return (
