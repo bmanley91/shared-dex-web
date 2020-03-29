@@ -23,11 +23,11 @@ const Footer = styled('div')`
 `;
 
 export interface LayoutProps {
-    title?: string,
-    children?: React.ReactNode
+    title?: string;
+    children?: React.ReactNode;
 }
 
-export const Layout = (props: LayoutProps) => {
+export const Layout: React.FunctionComponent<LayoutProps> = (props: LayoutProps) => {
     const displayTitle = props.title ? `Shared Dex - ${props.title}` : 'Shared Dex';
     return (
         <div id='app'>

@@ -14,7 +14,7 @@ const HeaderLink = styled('a')`
     text-decoration: none;
 `;
 
-export const Header = () => (
+export const Header: React.FunctionComponent<{}> = () => (
     <HeaderDiv>
         <Link href='/' passHref>
             <HeaderLink>Home</HeaderLink>
@@ -22,7 +22,7 @@ export const Header = () => (
         <Link href='/foo' passHref>
             <HeaderLink>Saved Dexes</HeaderLink>
         </Link>
-        <Link href='/foo' passHref>
+        <Link href='/new' passHref>
             <HeaderLink>Create New Dex</HeaderLink>
         </Link>
     </HeaderDiv>
