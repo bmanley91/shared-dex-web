@@ -1,13 +1,14 @@
 import React from 'react';
 import { Layout } from '../components/layout';
 import styled from '@emotion/styled';
+import { NextPage } from 'next';
 
 const BodyDiv = styled('div')`
     margin-top: 15px;
     text-align: center;
 `;
 
-const Home = () => (
+const Home: NextPage = () => (
     <Layout>
         <BodyDiv>
             <h1>Welcome to Shared Dex!</h1>
